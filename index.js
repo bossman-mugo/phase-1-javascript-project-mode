@@ -42,17 +42,12 @@ let getWeather = () => {
             </div>
         </div>
         `;
-    })
-
+      })
       //If city name is NOT valid
       .catch(() => {
         result.innerHTML = `<h3 class="msg">City not found</h3>`;
       });
-
-    }
-  };
-  searchBtn.addEventListener("click", getWeather);
-  window.addEventListener("load", getWeather);
-
-
-
+  }
+};
+searchBtn.addEventListener("click", getWeather);
+window.addEventListener("load", getWeather);
