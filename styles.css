@@ -74,3 +74,21 @@ body {
     color: var(--white);
     font-weight: 300;
 }
+.search-container input::placeholder {
+    color: var(--off-white);
+}
+.search-container input:focus {
+    border-color: var(--white);
+}
+.search-container  button {
+    color: var(--blue-2);
+    background-color: var(--white);
+    border-radius: 0.3em;
+}
+#result h2 {
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    margin: 1.25 em 0;
+}
