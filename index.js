@@ -44,3 +44,11 @@ let getWeather = () => {
         `;
     })
 
+      //If city name is NOT valid
+      .catch(() => {
+        result.innerHTML = `<h3 class="msg">City not found</h3>`;
+      });
+
+
+    }}
+
