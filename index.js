@@ -3,6 +3,7 @@ let result = document.getElementById("result");
 let searchBtn = document.getElementById("search-btn");
 let cityRef = document.getElementById("city");
 
+
 document.addEventListener('DOMContentLoaded', () => {
 
 //Function to fetch weather details from api and display them
