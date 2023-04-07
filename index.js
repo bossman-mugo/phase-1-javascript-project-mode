@@ -1,3 +1,4 @@
+//assigning the DOM element with the IDs
 let result = document.getElementById("result");
 let searchBtn = document.getElementById("search-btn");
 let cityRef = document.getElementById("city");
@@ -12,12 +13,15 @@ let getWeather = () => {
   //If input field is NOT empty
   else {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${key}&units=metric`;
-    //Clear the input field
+
+    //Clear the value enetered in the field
     cityRef.value = "";
+    //makes a fetch request to URL saved in variable url
     fetch(url)
       .then((resp) => resp.json())
       //If city name is valid
       .then((data) => {
+        //logs data received from API to console
         console.log(data);
         console.log(data.weather[0].icon);
         console.log(data.weather[0].main);
@@ -25,6 +29,8 @@ let getWeather = () => {
         console.log(data.name);
         console.log(data.main.temp_min);
         console.log(data.main.temp_max);
+
+        //sets innerHTMl to display that city name entered is not valid
         result.innerHTML = `
         <h2>${data.name}</h2>
         <h4 class="weather">${data.weather[0].main}</h4>
@@ -45,9 +51,14 @@ let getWeather = () => {
       })
       //If city name is NOT valid
       .catch(() => {
+        //returns error displaying the msg below
         result.innerHTML = `<h3 class="msg">City not found</h3>`;
       });
   }
 };
+
+//executes getWeather function when button is clicked
 searchBtn.addEventListener("click", getWeather);
+
+//getWeather function executed when webpage finishes loading
 window.addEventListener("load", getWeather);
