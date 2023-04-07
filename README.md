@@ -170,3 +170,18 @@ You can consult the [json-server docs][] for more information.
 - [json-server][]
 
 [json-server]: https://www.npmjs.com/package/json-server
+
+
+## Project Name
+The name for the project is "Eric's Weather App"
+
+## Author Name
+The author's name is "Eric Mugo Thiong'o"
+
+## Project Setup Instructions
+Fetch data from an API in OpenWeather so that the values will be diplayed when the search button is clicked
+
+## Github link to live site
+"https://github.com/FS-Moringa/phase-1-javascript-project-mode/compare/master...bossman-mugo:phase-1-javascript-project-mode:master"
+
+
