@@ -184,4 +184,8 @@ Fetch data from an API in OpenWeather so that the values will be diplayed when t
 ## Github link to live site
 "https://github.com/FS-Moringa/phase-1-javascript-project-mode/compare/master...bossman-mugo:phase-1-javascript-project-mode:master"
 
+## copyright
+
+Eric Mugo.All rights reserved.
+
 
